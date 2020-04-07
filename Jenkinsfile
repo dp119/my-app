@@ -1,8 +1,7 @@
 #!/usr/bin/env groovy
 
-// Configure using microservice-pipelines and using "part2" branch
-@Library("jenkins_shared_library@branch1") _
+// Configure using jenkins_shared_library and using "master" branch
+@Library("jenkins_shared_library@withSonar") _
 
-// Entry point into microservice-pipelines
+// Entry point into jenkins_shared_library
 jenkinsJob.call()
-
